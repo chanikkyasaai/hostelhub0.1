@@ -48,7 +48,7 @@ To set up this project locally:
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/chanikkyasaai/hHostelHub_1.0.git
+   git clone https://github.com/chanikkyasaai/HostelHub_1.0.git
    ```
 2. **Navigate to the project directory**
    ```sh
