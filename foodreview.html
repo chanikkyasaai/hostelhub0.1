@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Reviews - MIT Hostels Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;1,900&family=Space+Mono&family=Zeyada&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+ 
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1,
+    h2 {
+      margin: 0;
+      font-family: 'Exo', sans-serif;
+      text-align: center;
+    }
+
+   
+    form {
+      margin-top: 20px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-family: 'Exo', sans-serif;
+      color: #333;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      font-family: 'Exo', sans-serif;
+    }
+
+   
+    .rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .rating label {
+      color: #333;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .rating input[type="radio"] {
+      display: none;
+    }
+
+    .rating .star {
+      font-size: 24px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .rating .star:hover,
+    .rating .star.checked {
+      color: #FFD700;
+    
+    }
+
+   
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: 'Exo', sans-serif;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 9999;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .home-button:hover {
+      opacity: 1;
+    }
+
+    .home-button span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-family: 'Exo', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>HOSTELHUB</h1>
+    <h2 style="padding-top: 15px;">Food Reviews</h2>
+  </header>
+
+  <div class="container">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="review">Food Review:</label>
+      <textarea id="review" name="review" rows="4" required></textarea>
+
+      <div class="rating">
+        <label for="rating">Rating:</label>
+        <input type="radio" id="rating5" name="rating" value="5">
+        <label class="star" for="rating5"><i class="fas fa-star"></i></label>
+        <input type="radio" id="rating4" name="rating" value="4">
+        <label class="star" for="rating4"><i class="fas fa-star"></i></label>
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label class="star" for="rating3"><i class="fas fa-star"></i></label>
+        <input type="radio" id="rating2" name="rating" value="2">
+        <label class="star" for="rating2"><i class="fas fa-star"></i></label>
+        <input type="radio" id="rating1" name="rating" value="1">
+        <label class="star" for="rating1"><i class="fas fa-star"></i></label>
+      </div>
+
+      <br><br>
+      <input type="submit" value="Submit">
+      <button class="home-button" onclick="window.location.href='index.php'">
+        <span style="color: white;">Home</span>
+      </button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 MIT Hostels. All rights reserved. Designed and Developed by Chanikya Nelapatla</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+
+</html>

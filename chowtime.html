@@ -1,0 +1,284 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chowtime - Mess</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;1,900&family=Space+Mono&family=Zeyada&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1,
+    header h2,
+    header h3 {
+      margin: 0;
+      text-align: center;
+      font-family: 'Exo', sans-serif;
+    }
+
+
+    .sections {
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+      display: inline-block;
+      min-width: 80px;
+    }
+
+    .section-button:hover {
+      background-color: #555;
+    }
+
+    .section-content {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .section-content.active {
+      display: block;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .card-header h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .card-header button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .card-header button:hover {
+      background-color: #555;
+    }
+
+    .card-content p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .tokens {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .tokens p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-family: 'Exo', sans-serif;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 9999;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .home-button:hover {
+      opacity: 1;
+    }
+
+    .home-button span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 style="text-align: center; font-family: 'Exo', sans-serif;">HOSTELHUB</h1>
+    <br>
+    <button class="home-button"><a href="index.html">
+        <span style="color: white;">Home</span></a>
+    </button>
+
+    <h2>Chowtime</h2>
+    <h3>Mess Timing: 8:00 AM - 9:00 PM</h3>
+  </header>
+
+
+  <div class="container">
+
+    <div class="sections">
+
+      <div class="section">
+        <div class="card">
+          <div class="card-header">
+            <h3>Menu</h3>
+            <button class="section-button">Expand</button>
+          </div>
+          <div class="section-content">
+            <p>Monday: Rice, Dal, Chicken Curry, Salad</p>
+            <p>Tuesday: Roti, Paneer Curry, Pulao, Raita</p>
+            <p>Wednesday: Rice, Rajma, Aloo Gobi, Salad</p>
+            <p>Thursday: Roti, Chole, Jeera Rice, Salad</p>
+            <p>Friday: Rice, Fish Curry, Mixed Vegetables, Salad</p>
+            <p>Saturday: Roti, Matar Paneer, Veg Biryani, Raita</p>
+            <p>Sunday: Rice, Chicken Biryani, Salad</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <div class="card">
+          <div class="card-header">
+            <h3>Food Review</h3>
+            <button class="section-button">Expand</button>
+          </div>
+          <div class="section-content">
+            <p>Share your feedback and review the food quality, taste, and service. Your feedback helps us improve.</p>
+            <button class="section-button"><a href="foodreview.html">Write a Review</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="card">
+          <div class="card-header">
+            <h3>Tokens</h3>
+            <button class="section-button">Expand</button>
+          </div>
+          <div class="section-content">
+            <div class="tokens">
+              <p>egg tokens left : 14</p>
+              <p>Non-veg tokens left : 5</p>
+
+              <p>Please collect your meal at the counter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <footer>
+      <p>&copy; 2023 MIT Hostels. All rights reserved. Designed and Developed by Chanikya Nelapatla</p>
+    </footer>
+  </div>
+
+  <script>
+
+    const sectionButtons = document.querySelectorAll('.section-button');
+
+    sectionButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const content = button.parentNode.nextElementSibling;
+
+        content.classList.toggle('active');
+
+        if (content.style.display === 'block') {
+          button.textContent = 'Collapse';
+        } else {
+          button.textContent = 'Expand';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

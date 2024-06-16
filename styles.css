@@ -1,0 +1,180 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+
+.main-nav {
+  display: none;
+  background-color: #333;
+  padding: 10px;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-nav ul li {
+  margin: 10px;
+}
+
+.main-nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #555;
+  transition: background-color 0.3s;
+}
+
+.main-nav ul li a:hover {
+  background-color: #777;
+}
+
+
+.main-nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav ul li.submenu:hover > ul {
+  display: block;
+}
+
+.main-nav ul ul li {
+  width: 180px;
+  border-bottom: 1px solid #777;
+}
+
+.main-nav ul ul li:last-child {
+  border-bottom: none;
+}
+
+.main-nav ul ul li a {
+  padding: 8px 12px;
+}
+
+.main-nav ul ul li a:hover {
+  background-color: #555;
+}
+
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    padding: 0;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .main-nav ul li {
+    margin: 10px 0;
+  }
+
+  .main-nav ul li a {
+    border-radius: 20px;
+  }
+
+  .main-nav ul ul li {
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .main-nav ul ul li a {
+    padding: 10px 20px;
+  }
+
+  .main-nav ul ul {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .main-nav ul li.submenu:hover > ul {
+    display: none;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Other Requests - MIT Hostels Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;1,900&family=Space+Mono&family=Zeyada&display=swap"
+    rel="stylesheet">
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1,
+    h2 {
+      margin: 0;
+      font-family: 'Exo', sans-serif;
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-family: 'Exo', sans-serif;
+      color: #333;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      font-family: 'Exo', sans-serif;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: 'Exo', sans-serif;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+   
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 9999;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .home-button:hover {
+      opacity: 1;
+    }
+
+    .home-button span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-family: 'Exo', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>HOSTELHUB</h1>
+    <h2 style="padding-top: 15px;">Other Requests</h2>
+  </header>
+
+  <div class="container">
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+
+      <label for="branch">Branch:</label>
+      <input type="text" id="branch" name="branch" required>
+
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" required>
+
+
+
+      <label for="course">Block & Room No.:</label>
+      <input type="text" id="course" name="course" required>
+
+
+      <label for="request">Request:</label>
+      <textarea id="request" name="request" rows="4" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+    <button class="home-button"><a href="index.php">
+        <span style="color: white;">Home</span></a>
+    </button>
+
+  </div>
+  <footer>
+    <p>&copy; 2023 MIT Hostels. All rights reserved. Designed and Developed by Chanikya Nelapatla</p>
+  </footer>
+</body>
+
+</html>
