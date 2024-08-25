@@ -12,6 +12,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
+
 function fetchTableData($tableName, $statusColumn) {
   global $conn;
   $sql = "SELECT * FROM $tableName ORDER BY $statusColumn = 'Pending' DESC, $statusColumn";
